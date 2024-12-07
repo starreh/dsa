@@ -8,13 +8,12 @@ class BinarySearch:
     Space Complexity: O(1)
     """
 
-    @staticmethod
-    def search(array, data):
+    def binary_search(self, array, target):
         """
         Checks if an element is present in a sorted array.
 
         :param array: int[]
-        :param data: int
+        :param target: int
         :return: int
         """
 
@@ -23,10 +22,10 @@ class BinarySearch:
         while low <= high:
             mid = (low + high) // 2
 
-            if array[mid] > data:
+            if array[mid] > target:
                 high = mid - 1
 
-            elif array[mid] < data:
+            elif array[mid] < target:
                 low = mid + 1
 
             else:

@@ -8,18 +8,17 @@ class LinearSearch:
     Space Complexity: O(1)
     """
 
-    @staticmethod
-    def search(array, data):
+    def linear_search(self, array, target):
         """
         Checks if an element is present in an array.
 
         :param array: int[]
-        :param data: int
+        :param target: int
         :return: int
         """
 
         for idx, ele in enumerate(array):
-            if ele == data:
+            if ele == target:
                 return idx
 
         return -1
