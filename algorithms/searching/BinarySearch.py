@@ -20,9 +20,7 @@ class BinarySearch:
 
         low, high = 0, len(array) - 1
 
-
         while low <= high:
-
             mid = (low + high) // 2
 
             if array[mid] > data:
